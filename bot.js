@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+require('dotenv').config(); // Load environment variables from .env fileconst Discord = require('discord.js');
 const mysql = require('mysql');
 
 // Database connection details
@@ -63,5 +63,5 @@ function linkDiscordAndMinecraft(discordUsername, minecraftUsername) {
     });
 }
 
-// Login to Discord
-client.login('MTIxNjA4NzE0ODYyMTQ2MzU2Mw.GICGwO.pgkFHPM8hnGlyfjAqtYSXtQOHk7Ko5s4EF9bPw');
+// Login to Discord using the bot token from environment variable
+client.login(process.env.BOT_TOKEN);
