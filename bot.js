@@ -3,10 +3,10 @@ const mysql = require('mysql');
 
 // Database connection details
 const dbConnection = mysql.createConnection({
-    host: 'bj1ltcduutee7dmanhej-mysql.services.clever-cloud.com',
-    user: 'uulkeempqmal8d36',
-    password: '8pNmqqxQ4CHgE0jiW5TMR',
-    database: 'bj1ltcduutee7dmanhej'
+    host: '***.clever-cloud.com',
+    user: '***',
+    password: '***',
+    database: '***'
 });
 
 // Create a new Discord client
